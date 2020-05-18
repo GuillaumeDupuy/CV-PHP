@@ -32,6 +32,7 @@ if (!empty($_POST)) {
     if (!empty($_GET['delete'])) {
         $to_suppr = $_GET['delete'];
         $pdo->exec("DELETE FROM experiences WHERE id_experiences = $to_suppr ");
+        $pdo->exec("DELETE FROM education WHERE id_education = $to_suppr ");
     }
     if (!empty($_GET['modification'])) {
 
@@ -44,7 +45,7 @@ if (!empty($_POST)) {
 <div class="sucess">
     <a href="logout.php">Déconnexion</a>
     <p>Voici votre tableau de bord pour modifier l'expérience.</p>
-    
+
 </div>
 
 <div class="starter-template">
@@ -101,8 +102,32 @@ if (!empty($_POST)) {
 
         </div>
 
+
+    <?php } ?>
+
+
+    <?php
+    $base_de_donnee = $pdo->query("SELECT * FROM education ORDER BY id_education");
+    while ($education = $base_de_donnee->fetch(PDO::FETCH_OBJ)) { ?>
+
+        <div class="education">
+
+            <br>
+
+            <div>
+                <h5 class="card-title"><?php echo $education->ecole; ?></h5>
+            </div>
+
+            <?php echo '<a href="admin.php?delete=' . $education->id_education . '" >' ?> supprimer</a>
+
+            <br>
+
+            <?php echo '<a href="admin.php?modification=' . $education->id_education . '" >' ?> modifier</a>
+
+        </div>
+
+
     <?php } ?>
 
 
 </div>
-
