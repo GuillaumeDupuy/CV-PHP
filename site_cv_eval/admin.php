@@ -41,6 +41,12 @@ if (!empty($_POST)) {
 
 ?>
 
+<div class="sucess">
+    <a href="logout.php">Déconnexion</a>
+    <p>Voici votre tableau de bord pour modifier l'expérience.</p>
+    
+</div>
+
 <div class="starter-template">
     <form method="POST" action="" enctype='multipart/form-data'>
 
@@ -74,14 +80,12 @@ if (!empty($_POST)) {
 
     </form>
 
-    <br>
-
     <?php
 
-    $base_de_donnee = $pdo->query("SELECT * FROM experiences ORDER BY id_experiences DESC");
+    $base_de_donnee = $pdo->query("SELECT * FROM experiences ORDER BY id_experiences");
     while ($experiences = $base_de_donnee->fetch(PDO::FETCH_OBJ)) { ?>
 
-        <div>
+        <div class="experience">
 
             <br>
 
@@ -101,3 +105,4 @@ if (!empty($_POST)) {
 
 
 </div>
+

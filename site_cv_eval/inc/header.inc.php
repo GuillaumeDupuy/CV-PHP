@@ -38,6 +38,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.php">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="register.php">Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="login.php">Connexion</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="about.php">A Propos</a>
                 </li>
                 <li class="nav-item">
@@ -52,9 +61,7 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="award.php">Récompenses</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="admin.php">Administration</a>
-                </li>
+
             </ul>
         </div>
     </nav>

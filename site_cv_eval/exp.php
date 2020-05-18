@@ -7,7 +7,7 @@
 
     <?php
 
-    $base_de_donnee = $pdo->query("SELECT * FROM experiences ORDER BY id_experiences DESC");
+    $base_de_donnee = $pdo->query("SELECT * FROM experiences ORDER BY id_experiences");
     while ($experiences = $base_de_donnee->fetch(PDO::FETCH_OBJ)) { ?>
 
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
