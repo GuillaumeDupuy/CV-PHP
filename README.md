@@ -6,4 +6,4 @@
 
 #dimanche 17 mai : création et importation du dossier sur github, création, connection et importation de la TABLE sql du site 
 
-#
+#lundi 18 mai : correction de bug au niveau de l'ajout, ajout de la modification et suppression
