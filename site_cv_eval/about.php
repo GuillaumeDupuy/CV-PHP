@@ -8,7 +8,7 @@
         <div class="subheading mb-5">18 Avenue Du Marechal Joffre · Neuilly-Plaisance, 93360 · 0659288364 ·
           <a href="mailto:name@email.com">guillaume.dupuy@ynov.com</a>
         </div>
-        <p class="lead mb-5">Je suis actuel étudiant à Paris Ynov Campus en Bachelor 1 Informatique</p>
+        <p class="lead mb-5">Je suis actuellement étudiant à Paris Ynov Campus en Bachelor 1 Informatique</p>
         <div class="social-icons">
           <a href="https://github.com/guillaume9320">
             <i class="fab fa-github"></i>
